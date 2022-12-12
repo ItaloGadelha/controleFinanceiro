@@ -1,0 +1,17 @@
+
+form {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input, textarea, select {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+span{
+    text-align: top;
+    columns: 50;
+}
