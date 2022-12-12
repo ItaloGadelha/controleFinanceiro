@@ -1,0 +1,5 @@
+criação das tabelas do banco de dados 
+
+create table despesas (idDespesa serial primary key, numProtocolo int, anoProtocolo int, Protocolo varchar(20), tpDespesa varchar(45), dtProtocolo date, dtVencimento date, credorDespesa varchar(100), descDespesa varchar(255), vlDespesa money, sitDespesa int, usuario varchar(45));
+create table empenho (idEmpenho serial primary key, numEmpenho int, anoEmpenho int, Empenho varchar(20), dtEmpenho date, vlEmpenho money, obsEmpenho varchar(255), idDespesa int, usuario varchar(45));
+create table pagamento (idPagamento serial primary key, numPagamento int, anoPagamento int, Pagamento varchar(20), dtPagamento date, vlPagamento money, obsPagamento varchar(255), idEmpenho int, usuario varchar(45));
